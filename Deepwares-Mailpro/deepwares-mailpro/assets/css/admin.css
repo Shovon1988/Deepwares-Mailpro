@@ -1,0 +1,153 @@
+/* Deepwares MailPro Admin Styles */
+
+/* Campaign status labels */
+.dwmp-status-sent {
+  color: green;
+  font-weight: bold;
+}
+.dwmp-status-scheduled {
+  color: orange;
+  font-weight: bold;
+}
+.dwmp-status-draft {
+  color: gray;
+}
+
+/* GrapesJS editor container */
+#gjs {
+  border: 1px solid #ccc;
+  min-height: 400px;
+  background: #fff;
+  margin-top: 10px;
+}
+
+/* Tables */
+.wrap table.widefat td {
+  vertical-align: top;
+}
+
+/* Ensure GrapesJS blocks in the sidebar are visible and styled */
+.dwmp-blocks-container {
+  padding-top: 4px;
+}
+
+.dwmp-blocks-container .gjs-blocks-c {
+  display: block !important;
+}
+
+.dwmp-blocks-container .gjs-block {
+  display: block !important;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  background: #fafafa;
+  padding: 6px;
+  cursor: grab;
+}
+
+.dwmp-blocks-container .gjs-block-label {
+  font-size: 12px;
+  color: #333;
+}
+
+/* Visual / HTML tab buttons */
+.dwmp-tabs {
+  display: flex;
+  gap: 6px;
+}
+
+.dwmp-tab {
+  background: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 4px 4px 0 0;
+  padding: 6px 12px;
+  font-size: 13px;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dwmp-tab:hover {
+  background: #e9e9e9;
+  color: #000;
+}
+
+.dwmp-tab.active {
+  background: #2271b1;
+  border-color: #2271b1 #2271b1 #fff;
+  color: #fff;
+  font-weight: 600;
+  position: relative;
+  z-index: 2;
+}
+
+/* Pane container to look like a tabbed area */
+.dwmp-editor-panes {
+  border: 1px solid #ccc;
+  border-radius: 0 4px 4px 4px;
+  background: #fff;
+  margin-top: -1px; /* overlap active tab border */
+}
+
+/* Email Builder: make sure Blocks panel has space and shows items */
+.dwmp-blocks-container { min-height: 320px; }
+.dwmp-blocks-container .gjs-blocks-c { display: block; padding: 6px; }
+.dwmp-blocks-container .gjs-block {
+  display: block;
+  border: 1px solid #e5e7eb;
+  margin: 6px 0;
+  padding: 8px;
+  background: #fafafa;
+  border-radius: 8px;
+  cursor: grab;
+}
+.dwmp-blocks-container .gjs-block:hover { background: #f3f4f6; }
+.dwmp-blocks-container .gjs-category-title { font-weight: 600; }
+
+/* MailPro - Content Blocks panel overrides */
+#dwmp_blocks_container {
+    background: #ffffff !important;
+    padding: 0 !important;
+}
+
+/* Remove dark background & category header bar */
+#dwmp_blocks_container .gjs-blocks-c,
+#dwmp_blocks_container .gjs-block-category {
+    background: #ffffff !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+#dwmp_blocks_container .gjs-block-category .gjs-title {
+    display: none !important;
+}
+
+/* Individual block styling */
+#dwmp_blocks_container .gjs-block {
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    padding: 10px 12px;
+    margin: 6px 0;
+    background: #ffffff;
+    cursor: grab;
+    box-shadow: none;
+    font-size: 13px;
+}
+
+#dwmp_blocks_container .gjs-block:hover {
+    border-color: #111827;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+}
+
+/* Icon + label inside block */
+#dwmp_blocks_container .gjs-block .dashicons {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+#dwmp_blocks_container .gjs-block .dwmp-block-label {
+    line-height: 1.2;
+}
+
