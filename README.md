@@ -1,4 +1,7 @@
 # Deepwares MailPro – WordPress Email Marketing Plugin
+![Version](https://img.shields.io/github/v/release/Shovon1988/Deepwares-Mailpro)
+![License](https://img.shields.io/github/license/Shovon1988/Deepwares-Mailpro)
+![WordPress](https://img.shields.io/badge/WordPress-6.0%2B-blue)
 
 **Deepwares MailPro** is a modern, lightweight WordPress email marketing system that lets you create, schedule, and send email campaigns directly from your WordPress admin dashboard. It includes subscriber management, multiple lists, a fast queue processor, SMTP support, advanced tracking, and a clean professional interface.
 
